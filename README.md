@@ -1,6 +1,6 @@
 <br/>
 <p align="center">
-  <h3 align="center">ShiShi</h3>
+  <h3 align="center">Pomodoro</h3>
   <p align="center">
     A web based Pomodoro Timer Application
     <br/>
