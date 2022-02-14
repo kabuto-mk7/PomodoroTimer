@@ -13,7 +13,7 @@
 
 ## About The Project
 
-![Screen Shot](https://i.imgur.com/ovrj4qI.png)
+![Screen Shot](https://i.imgur.com/rvGOu6y.png)
 
 This is a project I made to step into web development, it was made using the stack of HTML5, JavaScript and CSS. I intend to use the application to help with my studies! The application is currently hosted on [a href=https://kabuto-mk7.github.io/PomodoroTimer/]GitHub pages[/a].
 
