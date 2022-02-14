@@ -44,3 +44,15 @@ body{
     transition: 2 ease;
 
 }
+
+.show_message{
+    display: block;
+    padding: 1rem 0;
+    color: #272343;
+    background: #e3f6f5;
+    border-radius: 0.5rem;
+    transition: 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
