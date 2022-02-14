@@ -1,10 +1,10 @@
 body{
-    background: #272343;
-    font-family: "Pacifico", cursive;
+    background: #072227;
+    font-family: "Bebas Neue";
 }
 
 .heading{
-    color: #bae8e8;
+    color: #4FBDBA;
 }
 
 .row{
@@ -32,15 +32,15 @@ body{
 
 .fa-play, 
 .fa-redo-alt{
-    color: #e3f6f5;
+    color: #4FBDBA;
     border: 2px solid transparent;
     padding: 1rem;
     border-radius: 2rem;
 }
 
 .fa-play:hover, .fa-redo-alt:hover{
-    color:#bae8e8;
-    border: 2px solid #bae8e8;
+    color:#35858B;
+    border: 2px solid #35858B;
     transition: 2 ease;
 
 }
@@ -48,8 +48,8 @@ body{
 .show_message{
     display: block;
     padding: 1rem 0;
-    color: #272343;
-    background: #e3f6f5;
+    color: #072227;
+    background: #4FBDBA;
     border-radius: 0.5rem;
     transition: 0.5s ease;
     display: flex;
