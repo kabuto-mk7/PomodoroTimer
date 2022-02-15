@@ -1,6 +1,8 @@
 var minutes = 25;
 var seconds = "00";
 
+var onBreak = false;
+
 var click = new Audio("click.mp3");
 var bell = new Audio("bell.mp3");
 
@@ -12,8 +14,15 @@ function template(){
 function start(){
     click.play();
 
-    minutes = 24;
-    seconds = 59;
+    if(onBreak == false){
+        minutes = 24;
+        seconds = 59;
+    }
+
+    if(onBreak == true){
+        minutes = 5;
+        seconds = 59;
+    }
 
     document.getElementById("minutes").innerHTML = minutes;
     document.getElementById("seconds").innerHTML = seconds;
@@ -35,10 +44,22 @@ function start(){
             if(minutes <= 0){
                 clearInterval(minutes_interval);
                 clearInterval(seconds_interval);
-
-                document.getElementById("done").innerHTML = "Session Complete! Take  break!";
-                document.getElementById("done").classList.add("show_message");
+                if(onBreak == false){
+                    document.getElementById("done").innerHTML = "Session Complete! take a 5 minute break!";
+                    document.getElementById("done").classList.add("show_message");
+                }
+                if(onBreak == true){
+                    document.getElementById("done").innerHTML = "Break complete! Let's start a new session!";
+                    document.getElementById("done").classList.add("show_message");
+                }
                 bell.play();
+                if(onBreak == false){
+                    onBreak = true;
+                    start();
+                }else{
+                    onBreak = false;
+                    start();
+                }
             }
             seconds = 60;
         }
