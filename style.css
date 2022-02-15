@@ -39,7 +39,9 @@ body{
     border-radius: 2rem;
 }
 
-.fa-play:hover, .fa-redo-alt:hover, .fa-github:hover{
+.fa-play:hover,
+.fa-redo-alt:hover,
+.fa-github:hover{
     color:#35858B;
     border: 2px solid #35858B;
     transition: 2 ease;
