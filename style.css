@@ -32,7 +32,8 @@ body{
 
 .fa-play, 
 .fa-redo-alt,
-.fa-github{
+.fa-github,
+.fa-pause{
     color: #4FBDBA;
     border: 2px solid transparent;
     padding: 1rem;
@@ -41,7 +42,8 @@ body{
 
 .fa-play:hover,
 .fa-redo-alt:hover,
-.fa-github:hover{
+.fa-github:hover,
+.fa-pause:hover{
     color:#35858B;
     border: 2px solid #35858B;
     transition: 2 ease;
