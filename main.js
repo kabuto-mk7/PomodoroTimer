@@ -66,14 +66,13 @@ function decreaseSecs(){
     }else{
         seconds = seconds -1;
         document.getElementById("seconds").innerHTML = seconds;
+        secondsTimer();
     }
     
     
 }
 
 function secondsTimer(){
-    
-    
     if(seconds <= 0){
         if(minutes <= 0){
             clearInterval(minutes_interval);
