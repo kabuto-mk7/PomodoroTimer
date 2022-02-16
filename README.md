@@ -33,9 +33,9 @@ Here is a full list of features this app currently supports
 * Play, begins a 25 minute timer.
 * Break, after the 25 minute timer, a second 5 minute timer begins.
 * Reset, resets the current timer back to 25 minutes.
+* Pause timer, pressing the pause button pauses the current timer, hitting play resumes it.
 * Custom timer (NOT YET IMPLEMENTED).
 * Custom break timer (NOT YET IMPLEMENTED).
-* Pause timer (NOT YET IMPLEMENTED).
 * Plays sounds from provided mp3 files.
 
 More features are on the way as this project is still a work in progress! 
