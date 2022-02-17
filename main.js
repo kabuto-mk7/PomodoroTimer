@@ -89,8 +89,7 @@ function mainFn()
 function start(){
     click.play();
 
-    // var minutes_interval = setInterval(decreaseMins, 60000);
-	while (launched == false)
+	if (launched == false)
     {
 		loop = setInterval(mainFn, 1000);
 		launched = true;
