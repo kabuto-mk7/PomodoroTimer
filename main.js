@@ -3,8 +3,7 @@ var seconds;
 var loop;
 
 var onBreak = false;
-var isPaused = false;
-var launched = false;
+var isPaused = true;
 var click = new Audio("click.mp3");
 var bell = new Audio("bell.mp3");
 
@@ -25,6 +24,7 @@ function template(){
 
 function pause(){
     click.play();
+	isPaused = true;
     document.getElementById("done").innerHTML = "Paused the timer!";
     document.getElementById("done").classList.add("show_message");
 	clearInterval(loop);
@@ -89,9 +89,9 @@ function mainFn()
 function start(){
     click.play();
 
-	if (launched == false)
+	if (isPaused == true)
     {
+		isPaused = false;
 		loop = setInterval(mainFn, 1000);
-		launched = true;
 	}
 }
